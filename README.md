@@ -1,10 +1,10 @@
 # react-countup
-React Hooksの導入、useStateをcountupアプリで理解用サンプルコード
+React Hooksの導入、useStateをcountup(+文字入力)アプリで理解用のサンプルコード
 
 ![countup](./countup.gif)
 
 ## 環境
-今回開発した環境
+開発環境のバージョン
 
 ```
 $ node -v
