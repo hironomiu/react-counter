@@ -87,5 +87,9 @@ export default App
 ```
 
 ## 参考
-[React公式:hooks-state](https://ja.reactjs.org/docs/hooks-state.html)
+- [React公式:hooks-state](https://ja.reactjs.org/docs/hooks-state.html)
 
+## ツール
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [React公式(英語)](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build)
+- [React公式(日本語)](https://ja.reactjs.org/docs/optimizing-performance.html#use-the-production-build)
