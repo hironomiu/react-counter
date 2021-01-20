@@ -1,6 +1,8 @@
 # react-countup
 React Hooksの導入、useStateをcountupアプリで理解用サンプルコード
 
+![countup](./countup.gif)
+
 ## 環境
 今回開発した環境
 
