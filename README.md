@@ -19,7 +19,11 @@ $ yarn -v
 1.22.5
 ```
 
-## create-react-appq
+## Chrome DevTools
+
+動作の確認で利用。[React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)プラグインを追加でインストール
+
+## create-react-app
 
 react-countup 用のベースアプリを作成
 
