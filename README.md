@@ -1,6 +1,6 @@
-# react-countup
+# react-counter
 
-React Hooks の導入、useState を countup(+文字入力)アプリで理解用のサンプルコード
+React Hooks の導入、useState を counter(+文字入力)アプリで理解用のサンプルコード
 
 ![countup](./countup.gif)
 
@@ -19,15 +19,17 @@ $ yarn -v
 1.22.5
 ```
 
-## create
+## create-react-appq
 
 react-countup 用のベースアプリを作成
 
 ```
-$ npx create-react-app react-countup
+$ mkdir react-counter
+$ cd react-counter
+$ npx create-react-app .
 ```
 
-## start
+## run server
 
 `http://localhost:3000/`で countup App を起動
 
@@ -52,7 +54,7 @@ src
 └── setupTests.js
 ```
 
-## setup(add dir)
+## components setup
 
 `component`毎に作成していくために`components`ディレクトリで管理する
 
@@ -93,15 +95,28 @@ const App = () =>{
 export default App
 ```
 
+## counter App の実装
+
+main レポの内容を実装
+
 ## test
 
-`src/App.test.js`,`
+`src/App.test.js`を編集
+
+### package.json
+
+```
++ "test": "react-scripts test --env=jsdom --verbose"
+- "test": "react-scripts test"
+```
+
+### test run
 
 ```
 $ npm test
 ```
 
-## Hooks ドキュメントお
+## React Hooks ドキュメント
 
 - [React 公式:hooks-state](https://ja.reactjs.org/docs/hooks-state.html)
 
