@@ -1,9 +1,11 @@
 # react-countup
-React Hooksの導入、useStateをcountup(+文字入力)アプリで理解用のサンプルコード
+
+React Hooks の導入、useState を countup(+文字入力)アプリで理解用のサンプルコード
 
 ![countup](./countup.gif)
 
 ## 環境
+
 開発環境のバージョン
 
 ```
@@ -18,26 +20,29 @@ $ yarn -v
 ```
 
 ## create
-react-countup用のベースアプリを作成
+
+react-countup 用のベースアプリを作成
 
 ```
 $ npx create-react-app react-countup
 ```
 
 ## start
-`http://localhost:3000/`でcountup Appを起動
+
+`http://localhost:3000/`で countup App を起動
 
 ```
 $ yarn start
 ```
 
 ## setup(delete file)
+
 `×`のファイルは今回は不要なので削除
 
 ```
 $ tree src
 src
-├── × App.css 
+├── × App.css
 ├── App.js
 ├── × App.test.js
 ├── × index.css
@@ -48,6 +53,7 @@ src
 ```
 
 ## setup(add dir)
+
 `component`毎に作成していくために`components`ディレクトリで管理する
 
 ```
@@ -56,7 +62,8 @@ $ mkdir components
 ```
 
 ## setup(modifi file)
-`index.js``App.js`を以下に変更
+
+` index.js``App.js `を以下に変更
 
 `src/index.js`
 
@@ -86,10 +93,22 @@ const App = () =>{
 export default App
 ```
 
-## 参考
-- [React公式:hooks-state](https://ja.reactjs.org/docs/hooks-state.html)
+## Hooks ドキュメントお
+
+- [React 公式:hooks-state](https://ja.reactjs.org/docs/hooks-state.html)
 
 ## ツール
+
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-- [React公式(英語)](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build)
-- [React公式(日本語)](https://ja.reactjs.org/docs/optimizing-performance.html#use-the-production-build)
+- [React 公式(英語)](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build)
+- [React 公式(日本語)](https://ja.reactjs.org/docs/optimizing-performance.html#use-the-production-build)
+
+## FYI
+
+template に redux を指定すると counter アプリが標準で動作
+
+```
+$ npx create-react-app --template redux
+```
+
+![template-redux](./template-redux.png)
