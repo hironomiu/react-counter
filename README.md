@@ -44,12 +44,12 @@ $ tree src
 src
 ├── × App.css
 ├── App.js
-├── × App.test.js
+├── App.test.js
 ├── × index.css
 ├── index.js
 ├── × logo.svg
 ├── × reportWebVitals.js
-└── × setupTests.js
+└── setupTests.js
 ```
 
 ## setup(add dir)
@@ -95,6 +95,8 @@ export default App
 
 ## test
 
+`src/App.test.js`,`
+
 ```
 $ npm test
 ```
@@ -111,10 +113,13 @@ $ npm test
 
 ## FYI
 
-template に redux を指定すると counter アプリが標準で動作
+`template`に`redux`を指定すると counter アプリが標準で動作
 
 ```
-$ npx create-react-app --template redux
+$ mkdir hoge
+$ hoge hoge
+$ npx create-react-app . --template redux
+$ yarn start
 ```
 
 ![template-redux](./template-redux.png)
