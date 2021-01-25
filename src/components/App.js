@@ -6,6 +6,7 @@ const App = (props) => {
 
   return (
     <>
+    <h1>hoge</h1>
       <p> {message}：{count} </p>
       <button onClick={() => setCount(cnt => cnt + 1)}> + </button>
       <button onClick={() => setCount(cnt => cnt - 1)}> - </button>
