@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 
 const App = (props) => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(props.count)
   const [message,setMessage] = useState(props.message)
 
   return (
     <>
-    <h1>hoge</h1>
       <p> {message}：{count} </p>
       <button onClick={() => setCount(cnt => cnt + 1)}> + </button>
       <button onClick={() => setCount(cnt => cnt - 1)}> - </button>
@@ -15,7 +14,8 @@ const App = (props) => {
   )
 }
 App.defaultProps = {
-  message: 'hello'
+  message: 'hello',
+  count: 0
 }
 
 export default App
