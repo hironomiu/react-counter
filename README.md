@@ -93,6 +93,12 @@ const App = () =>{
 export default App
 ```
 
+## test
+
+```
+$ npm test
+```
+
 ## Hooks ドキュメントお
 
 - [React 公式:hooks-state](https://ja.reactjs.org/docs/hooks-state.html)
