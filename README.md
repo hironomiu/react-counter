@@ -130,6 +130,15 @@ $ npm test
 - [React 公式(英語)](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build)
 - [React 公式(日本語)](https://ja.reactjs.org/docs/optimizing-performance.html#use-the-production-build)
 
+## VSCode Extensions
+
+VSCode で Test 含め開発する場合は以下の Extensions をインストール
+
+- ES7 React/Redux/GraphQL/React-Native snippets
+- Prettier - Code formatter
+  - 設定 ->「Editor: Format On Save」をチェック
+- Jest
+
 ## FYI
 
 `template`に`redux`を指定すると counter アプリが標準で動作
