@@ -136,7 +136,7 @@ $ npm test
 
 ```
 $ mkdir hoge
-$ hoge hoge
+$ cd  hoge
 $ npx create-react-app . --template redux
 $ yarn start
 ```
