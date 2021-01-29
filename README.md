@@ -1,6 +1,6 @@
 # react-counter
 
-![action](https://github.com/hironomiu/react-counter/workflows/action/badge.svg?branch=main)
+[![action](https://github.com/hironomiu/react-counter/workflows/action/badge.svg?branch=main)](https://github.com/hironomiu/react-counter/actions?query=workflow%3Aaction)
 
 React Hooks の導入、useState を counter(+文字入力)アプリで理解用のサンプルコード
 
