@@ -8,7 +8,7 @@ React Hooks の導入、useState を counter(+文字入力)アプリで理解用
 
 ## 環境
 
-開発環境のバージョン
+### 開発環境のバージョン
 
 ```
 $ node -v
@@ -20,6 +20,12 @@ $ npx -v
 $ yarn -v
 1.22.5
 ```
+
+### インストール
+
+- バージョン管理
+  - [参考：nodeenv-vs-nodenv-vs-nvm](https://www.npmtrends.com/nodeenv-vs-nodenv-vs-nvm)
+  - [参考：nodebew](https://formulae.brew.sh/formula/nodebrew)(上記以外の Mac での選択肢)
 
 ## Chrome DevTools
 
@@ -105,11 +111,11 @@ export default App
 
 ## counter App の実装
 
-main レポの内容を実装
+main レポの[src 配下](https://github.com/hironomiu/react-counter/tree/main/src)の内容を実装
 
 ## test
 
-`src/App.test.js`を編集
+[src/App.test.js](https://github.com/hironomiu/react-counter/blob/main/src/App.test.js)を編集
 
 ### package.json
 
@@ -123,6 +129,12 @@ main レポの内容を実装
 ```
 $ npm test
 ```
+
+## actions
+
+開発のホームディレクトリに`.github/workflows`ディレクトリを作成し[action.yml](https://github.com/hironomiu/react-counter/blob/main/.github/workflows/action.yml)を配置
+
+- [公式：GitHub Actions 入門](https://docs.github.com/ja/actions/learn-github-actions/introduction-to-github-actions)
 
 ## React Hooks ドキュメント
 
