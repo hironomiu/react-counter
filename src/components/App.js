@@ -10,8 +10,8 @@ const App = (props) => {
         {" "}
         {message}：{count}{" "}
       </p>
-      <button onClick={() => setCount((cnt) => cnt + 1)}> + </button>
-      <button onClick={() => setCount((cnt) => cnt - 1)}> - </button>
+      <button onClick={() => setCount((cnt) => ++cnt)}> + </button>
+      <button onClick={() => setCount((cnt) => --cnt)}> - </button>
       <div>
         message :{" "}
         <input
