@@ -113,9 +113,11 @@ export default App
 
 main レポの[src 配下](https://github.com/hironomiu/react-counter/tree/main/src)の内容を実装
 
-## test
+## アプリケーションテスト
 
 [src/App.test.js](https://github.com/hironomiu/react-counter/blob/main/src/App.test.js)を編集
+
+- [JEST 公式：expect](https://jestjs.io/docs/ja/expect)
 
 ### package.json
 
