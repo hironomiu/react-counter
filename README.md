@@ -126,13 +126,15 @@ main レポの[src 配下](https://github.com/hironomiu/react-counter/tree/main/
 - "test": "react-scripts test"
 ```
 
-### test run
+### テストの実行
+
+VSCode の場合[Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)で行うことも可能
 
 ```
 $ npm test
 ```
 
-## actions
+## GitHub Actions
 
 開発のホームディレクトリに`.github/workflows`ディレクトリを作成し[action.yml](https://github.com/hironomiu/react-counter/blob/main/.github/workflows/action.yml)を配置
 
@@ -150,12 +152,12 @@ $ npm test
 
 ## VSCode Extensions
 
-VSCode で Test 含め開発する場合は以下の Extensions をインストール
+VSCode でアプリケーションテスト含め開発する場合は以下の Extensions をインストール
 
 - ES7 React/Redux/GraphQL/React-Native snippets
 - Prettier - Code formatter
   - 設定 ->「Editor: Format On Save」をチェック
-- Jest
+- [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
 ## FYI
 
