@@ -21,15 +21,18 @@ $ yarn -v
 1.22.5
 ```
 
-### インストール
+### 開発環境構築
+
+Node.js 用バージョン管理ツール
 
 - バージョン管理
   - [参考：nodeenv-vs-nodenv-vs-nvm](https://www.npmtrends.com/nodeenv-vs-nodenv-vs-nvm)
   - [参考：nodebew](https://formulae.brew.sh/formula/nodebrew)(上記以外の Mac での選択肢)
 
-## Chrome DevTools
+## React Developer Tools(Chrome DevTools Plugin)
 
-動作の確認で利用。[React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)プラグインを追加でインストール
+[Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)に追加する Plugin
+今回は主に React の state の確認で利用。[React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)から追加でインストール
 
 ## create-react-app
 
@@ -41,15 +44,15 @@ $ cd react-counter
 $ npx create-react-app .
 ```
 
-## run server
+## サーバの起動
 
-`http://localhost:3000/`で countup App を起動
+react-counter 用の Node.js サーバを起動。ブラウザで開かれた`http://localhost:3000/`で動作を確認
 
 ```
 $ yarn start
 ```
 
-## setup(delete file)
+## 開発の準備(ファイルの削除)
 
 `×`のファイルは今回は不要なので削除
 
@@ -66,18 +69,18 @@ src
 └── setupTests.js
 ```
 
-## components setup
+## components ディレクトリの用意
 
-`component`毎に作成していくために`components`ディレクトリで管理する
+`component`毎に作成していくために`components`ディレクトリを作成する
 
 ```
 $ cd src
 $ mkdir components
 ```
 
-## setup(modifi file)
+## 開発の準備(ファイルの編集)
 
-` index.js``App.js `を以下に変更
+`src/index.js`と`src/App.js `を以下に変更
 
 `src/index.js`
 
@@ -111,7 +114,7 @@ export default App
 
 ## counter App の実装
 
-main レポの[src 配下](https://github.com/hironomiu/react-counter/tree/main/src)の内容を実装
+[src 配下](https://github.com/hironomiu/react-counter/tree/main/src)の内容を実装
 
 ## アプリケーションテスト
 
@@ -119,7 +122,7 @@ main レポの[src 配下](https://github.com/hironomiu/react-counter/tree/main/
 
 - [JEST 公式：expect](https://jestjs.io/docs/ja/expect)
 
-### package.json
+### package.json の編集
 
 ```
 + "test": "react-scripts test --env=jsdom --verbose"
@@ -134,7 +137,7 @@ VSCode の場合[Jest](https://marketplace.visualstudio.com/items?itemName=Orta.
 $ npm test
 ```
 
-## GitHub Actions
+## GitHub Actions の導入
 
 開発のホームディレクトリに`.github/workflows`ディレクトリを作成し[action.yml](https://github.com/hironomiu/react-counter/blob/main/.github/workflows/action.yml)を配置
 
@@ -152,7 +155,7 @@ $ npm test
 
 ## VSCode Extensions
 
-VSCode でアプリケーションテスト含め開発する場合は以下の Extensions をインストール
+VSCode で開発、アプリケーションテストを行う場合は以下の Extensions をインストール
 
 - ES7 React/Redux/GraphQL/React-Native snippets
 - Prettier - Code formatter
@@ -161,7 +164,7 @@ VSCode でアプリケーションテスト含め開発する場合は以下の 
 
 ## FYI
 
-`template`に`redux`を指定すると counter アプリが標準で動作
+`template`に`redux`を指定すると標準で counter アプリが動作する
 
 ```
 $ mkdir hoge
