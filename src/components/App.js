@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import Header from "./Header"
+import Footer from "./Footer"
 
 const App = (props) => {
   const [count, setCount] = useState(props.count)
@@ -6,6 +8,7 @@ const App = (props) => {
 
   return (
     <>
+      <Header count={count} />
       <p>
         {" "}
         {message}：{count}{" "}
@@ -20,6 +23,7 @@ const App = (props) => {
           onChange={(e) => setMessage((msg) => (msg = e.target.value))}
         />
       </div>
+      <Footer />
     </>
   )
 }
