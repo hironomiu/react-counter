@@ -74,8 +74,7 @@ src
 `component`毎に作成していくために`components`ディレクトリを作成する
 
 ```
-$ cd src
-$ mkdir components
+$ mkdir src/components
 ```
 
 ## 開発の準備(ファイルの編集)
@@ -131,7 +130,7 @@ export default App
 
 ### テストの実行
 
-VSCode の場合[Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)で行うことも可能
+VSCode の場合[Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)で VSCode 側で行うことも可能
 
 ```
 $ npm test
