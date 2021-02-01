@@ -146,6 +146,7 @@ $ npm test
 ## 追加の課題
 
 - [フッター(Footer)、ヘッダー(Header)用の component 作成 #1](https://github.com/hironomiu/react-counter/issues/1)
+- [MATERIAL-UI の導入 #2](https://github.com/hironomiu/react-counter/issues/2)
 
 ## React Hooks ドキュメント
 
