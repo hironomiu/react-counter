@@ -143,6 +143,10 @@ $ npm test
 
 - [公式：GitHub Actions 入門](https://docs.github.com/ja/actions/learn-github-actions/introduction-to-github-actions)
 
+## 追加の課題
+
+- フッター(Footer)、ヘッダー(Header)用の component 作成 #1
+
 ## React Hooks ドキュメント
 
 - [React 公式:hooks-state](https://ja.reactjs.org/docs/hooks-state.html)
