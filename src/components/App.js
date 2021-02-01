@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Header from "./Header"
 import Footer from "./Footer"
+import { Button, Input } from "@material-ui/core"
 
 const App = (props) => {
   const [count, setCount] = useState(props.count)
@@ -13,11 +14,11 @@ const App = (props) => {
         {" "}
         {message}：{count}{" "}
       </p>
-      <button onClick={() => setCount((cnt) => ++cnt)}> + </button>
-      <button onClick={() => setCount((cnt) => --cnt)}> - </button>
+      <Button onClick={() => setCount((cnt) => ++cnt)}> + </Button>
+      <Button onClick={() => setCount((cnt) => --cnt)}> - </Button>
       <div>
         message :{" "}
-        <input
+        <Input
           type="text"
           value={message}
           onChange={(e) => setMessage((msg) => (msg = e.target.value))}
