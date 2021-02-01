@@ -145,7 +145,7 @@ $ npm test
 
 ## 追加の課題
 
-- フッター(Footer)、ヘッダー(Header)用の component 作成 #1
+- [フッター(Footer)、ヘッダー(Header)用の component 作成 #1](https://github.com/hironomiu/react-counter/issues/1)
 
 ## React Hooks ドキュメント
 
