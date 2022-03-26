@@ -7,8 +7,7 @@ const App = (props) => {
   return (
     <>
       <p>
-        {" "}
-        {message}：{count}{" "}
+        {message}：{count}
       </p>
       <button onClick={() => setCount((cnt) => ++cnt)}> + </button>
       <button onClick={() => setCount((cnt) => --cnt)}> - </button>
@@ -17,7 +16,8 @@ const App = (props) => {
         <input
           type="text"
           value={message}
-          onChange={(e) => setMessage((msg) => (msg = e.target.value))}
+          // onChange={(e) => setMessage((msg) => (msg = e.target.value))}
+          onChange={(e) => setMessage( e.target.value)}
         />
       </div>
     </>

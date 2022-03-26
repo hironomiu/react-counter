@@ -2,6 +2,7 @@ import React from "react"
 import { render, screen, cleanup } from "@testing-library/react"
 import App from "./components/App"
 import userEvent from "@testing-library/user-event"
+import '@testing-library/jest-dom/extend-expect'
 
 afterEach(() => cleanup())
 
@@ -17,13 +18,9 @@ describe("Rendering", () => {
 })
 
 describe("Input form onChange event", () => {
-  it("Shold ", () => {
+  it("Shold a", () => {
     render(<App />)
-    const inputValue = screen.getByRole("textbox")
-    new Promise(() => {
-      userEvent.type(inputValue, "test")
-    }).then(() => {
-      expect(inputValue.value).toBe("test")
-    })
+    userEvent.type(screen.getByRole("textbox"), " test")
+    expect(screen.getByText('hello test：0')).toBeInTheDocument()
   })
 })
